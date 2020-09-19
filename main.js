@@ -26,30 +26,73 @@ let users = [{
         dog: 'German Shepard'
     }
 ];
-// how it is layed out.
-//array.map(function(currentValue, index, arr), thisValue)
-// function mapping(arr){
 
-// users.map(function(firstName, lastName){
-// console.log(firstName)
-// })
-// }
-// console.log(mapping(users))
+    users.map((arr) => {
+        console.log(
+          `first Name: ${element.firstName}, last Name: ${element.lastName}`
+        );
+      })
 
 
-// let array = [
-//     {
-//        song: 'Hello',
-//        artist: 'Adele',
-//     },
-//     {
-//         song: 'Wonderwall',
-//         artist: 'Oasis'
-//     }
-// ]
-function mapping(givenArr) {
-    givenArr.map((elem) => {
-        console.log(`${elem.firstName} ${elem.lastName}`)
-    })
-}
-mapping(users)
+// // how it is layed out.
+// //array.map(function(currentValue, index, arr), thisValue)
+// // function mapping(arr){
+
+// // users.map(function(firstName, lastName){
+// // console.log(firstName)
+// // })
+// // }
+// // console.log(mapping(users))
+
+
+// // let array = [
+// //     {
+// //        song: 'Hello',
+// //        artist: 'Adele',
+// //     },
+// //     {
+// //         song: 'Wonderwall',
+// //         artist: 'Oasis'
+// //     }
+// // ]
+// // function mapping(givenArr) {
+// //     givenArr.map((elem) => {
+// //         console.log(`${elem.firstName} ${elem.lastName}`)
+// //     })
+// // }
+// // mapping(users)
+
+
+const users2 = [
+    { name: 'pan', likes: 'lasagne' },
+    { name: 'lena', likes: 'wine' },
+    { name: 'jill', likes: 'tacos' },
+    { name: 'conner', likes: 'turkey' }
+    ];
+    // Should look like:
+    [
+    { pan: 'lasagne', age: 30 },
+    { lena: 'wine', age: 40 },
+    { jill: 'tacos', age: 40 },
+    { conner: 'turkey', age: 60 }
+    ]
+
+    function thing(arr){
+arr.map((item)=>{
+    return {[item.name]:item.likes, age:item.name.length *10}
+})
+    }
+    let x = thing(users2)
+
+
+    function dinner2(){
+        let newArr=[];
+        for(const person of arr){
+            
+        }
+    }
+
+    let people = users2.map((user) => {
+        let age = user.name.length * 10;
+        return {[user.name]:user.likes, age : age};
+    });
