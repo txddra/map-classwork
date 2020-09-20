@@ -83,43 +83,31 @@ const users2 = [{
     }
 ];
 // Should look like:
-[{
-        pan: 'lasagne',
-        age: 30
-    },
-    {
-        lena: 'wine',
-        age: 40
-    },
-    {
-        jill: 'tacos',
-        age: 40
-    },
-    {
-        conner: 'turkey',
-        age: 60
-    }
-]
+// [{
+//         pan: 'lasagne',
+//         age: 30
+//     },
+//     {
+//         lena: 'wine',
+//         age: 40
+//     },
+//     {
+//         jill: 'tacos',
+//         age: 40
+//     },
+//     {
+//         conner: 'turkey',
+//         age: 60
+//     }
+// ]
 
-function thing(arr) {
-    arr.map((item) => {
+//'solution'
+    let x = users2.map((item) => {
         return {
             [item.name]: item.likes,
             age: item.name.length * 10
         }
     })
-}
-let x = thing(users2)
 
+//testing
 console.log(x)
-// function dinner2(){
-//     let newArr=[];
-//     for(const person of arr){
-
-//     }
-// }
-
-// let people = users2.map((user) => {
-//     let age = user.name.length * 10;
-//     return {[user.name]:user.likes, age : age};
-// });
