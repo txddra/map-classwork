@@ -27,14 +27,10 @@ let users = [{
     }
 ];
 //'solution'
-let l = users.map((arr) => {
-    console.log(
-        `first Name: ${arr.firstName}, last Name: ${arr.lastName}`
-        );
-})
+let l = users.map((arr) => console.log( `${arr.firstName} ${arr.lastName}`))
 
-//testing
-console.log(l)
+// //testing
+// console.log(l)
 
 // // how it is layed out.
 // //array.map(function(currentValue, index, arr), thisValue)
